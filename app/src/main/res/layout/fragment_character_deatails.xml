@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.CharacterDetailsFragment">
+
+    <TextView
+        android:id="@+id/chNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/chHeightTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chNameTv"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/chMassTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/chHeightTv"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/chHairColorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:layout_below="@id/chMassTv"
+        android:textSize="22sp" />
+
+
+    <TextView
+        android:id="@+id/chEyeColorTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/chHairColorTv"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/chBirthYearTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:layout_below="@id/chEyeColorTv"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/chGenderTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:layout_below="@id/chBirthYearTv"
+        android:padding="5dp"
+        android:textSize="22sp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chFloatingButton"
+        android:layout_alignParentEnd="true"
+         android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/add_to_favourites"
+        android:src="@drawable/baseline_favorite_24"
+        android:clickable="true"
+        />
+
+</RelativeLayout>

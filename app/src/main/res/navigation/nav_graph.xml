@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/charactersFragment">
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.starwarsapp.ui.fragments.CharactersFragment"
+        android:label="fragment_characters"
+        tools:layout="@layout/fragment_characters" >
+        <action
+            android:id="@+id/action_charactersFragment_to_shipsFragment"
+            app:destination="@id/shipsFragment"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+        <action
+            android:id="@+id/action_charactersFragment_to_characterDetailsFragment"
+            app:destination="@id/characterDetailsFragment"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/shipsFragment"
+        android:name="com.example.starwarsapp.ui.fragments.ShipsFragment"
+        android:label="fragment_ships"
+        tools:layout="@layout/fragment_ships" >
+        <action
+            android:id="@+id/action_shipsFragment_to_shipDetailsFragment"
+            app:destination="@id/shipDetailsFragment"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/characterDetailsFragment"
+        android:name="com.example.starwarsapp.ui.fragments.CharacterDetailsFragment"
+        android:label="fragment_character_deatails"
+        tools:layout="@layout/fragment_character_deatails" />
+    <fragment
+        android:id="@+id/shipDetailsFragment"
+        android:name="com.example.starwarsapp.ui.fragments.ShipDetailsFragment"
+        android:label="fragment_ship_details"
+        tools:layout="@layout/fragment_ship_details" />
+</navigation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.ShipDetailsFragment">
+
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/modelTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:layout_below="@id/nameTv"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/manufaturerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:layout_below="@id/modelTv"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/passengersTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:layout_below="@id/manufaturerTv"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/crewTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/tv_border"
+        android:padding="5dp"
+        android:layout_below="@id/passengersTv"
+        android:textSize="22sp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/shFloatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:contentDescription="@string/add_to_favourites"
+        android:src="@drawable/baseline_favorite_24"
+        android:clickable="true"
+        />
+
+
+</RelativeLayout>
