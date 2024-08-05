@@ -9,13 +9,26 @@
 
 
     <TextView
+        android:id="@+id/shTitle"
+        android:text="@string/ship_details"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:fontFamily="@font/poppins"
+        android:textSize="25sp" />
+    <TextView
         android:id="@+id/nameTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_below="@+id/shTitle"
         android:background="@drawable/tv_border"
         android:padding="5dp"
         android:textSize="22sp" />
+
+
 
     <TextView
         android:id="@+id/modelTv"

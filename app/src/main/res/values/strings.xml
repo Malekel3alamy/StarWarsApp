@@ -9,4 +9,5 @@
     <string name="retry">Retry</string>
     <string name="sorry_network_error">Sorry Network Error</string>
     <string name="add_to_favourites">add to favourites</string>
+    <string name="ship_details">Ship Details</string>
 </resources>
