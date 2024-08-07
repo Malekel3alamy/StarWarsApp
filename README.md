@@ -33,6 +33,7 @@
 * **Room:** Persistence library for storing data locally.
 * **Hilt:** Dependency injection framework for managing dependencies.
 * **Coroutines:** Asynchronous programming for efficient network and database operations.
+* **MVVM:**
 
   ## API
 The app utilizes the publicly available Star Wars API (SWAPI) to fetch data: [https://swapi.dev/](https://swapi.dev/)
